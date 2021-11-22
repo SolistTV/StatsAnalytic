@@ -131,17 +131,9 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_64\\lib\\importlib\\util.py',
    'PYMODULE'),
-  ('stringprep',
+  ('typing',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_64\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('quopri',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_64\\lib\\quopri.py',
-   'PYMODULE'),
-  ('getopt',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_64\\lib\\getopt.py',
+   'Studio\\Shared\\Python37_64\\lib\\typing.py',
    'PYMODULE'),
   ('bz2',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -155,9 +147,17 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_64\\lib\\base64.py',
    'PYMODULE'),
-  ('typing',
+  ('getopt',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_64\\lib\\typing.py',
+   'Studio\\Shared\\Python37_64\\lib\\getopt.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\quopri.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_64\\lib\\stringprep.py',
    'PYMODULE'),
   ('tracemalloc',
    'C:\\Program Files (x86)\\Microsoft Visual '

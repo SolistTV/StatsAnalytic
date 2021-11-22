@@ -88,7 +88,7 @@ parameters = {
         'default_value_2': 70,
     },
     'percent_bonus': {
-        'name': 'Бонус к урону',
+        'name': 'Усиление исходящего урона',
         'value': '',
         'label': Label(),
         'input_1': Entry(),
@@ -435,11 +435,15 @@ def calc():
         builds['damage_1'].config(bg='#b9b7b7')
         builds['damage_2'].config(bg=submit_bg_color)
 
-    damage_diff = eval(
-        f"(({builds['damage_2']['text']} - {builds['damage_1']['text']})"
-        + f" / ({builds['damage_1']['text']} + {builds['damage_2']['text']}))"
-        + f" / 2* 100"
-    )
+    if builds['damage_1']['text'] > builds['damage_2']['text']:
+        value1 = builds['damage_1']['text']
+        value2 = builds['damage_2']['text']
+    else:
+        value1 = builds['damage_2']['text']
+        value2 = builds['damage_1']['text']
+
+    damage_diff = eval(f"(({value1} - {value2}) / {value2}) * 100")
+
     damage_diff = str(round(damage_diff, 2)) + '%'
     builds['damage_diff'].config(text=damage_diff)
 
